@@ -1,0 +1,10 @@
+*{
+    margin:100;
+    padding:100;
+}
+h2{
+    color: red;
+}
+p{
+    background: lightgreen;
+}
