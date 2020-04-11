@@ -1,0 +1,39 @@
+html,
+body {
+    font-family: sans-serif;
+}
+
+.form {
+    width: 30%;
+    margin: 16px auto;
+    padding: 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.form > input,
+.form > button {
+    display: block;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1.5em;
+}
+
+.form > input,
+.form > h2 {
+    margin-bottom: 16px;
+}
+
+.form > input {
+    width: 100%;
+}
+
+.form > button {
+    cursor: pointer;
+    width: 36%;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    color: #555;
+}
