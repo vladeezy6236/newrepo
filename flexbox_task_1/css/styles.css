@@ -1,0 +1,32 @@
+html,
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.flexbox {
+    display: flex;
+    margin-bottom: 1em;
+    border: 2px solid #eee;
+}
+
+.box {
+    width: 20%;
+    border: 2px solid #bbb;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
