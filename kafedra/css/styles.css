@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+    .teacher:hover{
+        border: 2px solid #0088ee;
+        background-color: #00aaee;
+    }
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.teacher {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    padding: 1em;
+}
+
+.teacher > img {
+    width: 100%;
+}
+
+.teacher::after {
+    content: attr(data-position);
+    display: block;
+    color: #555;
+    font-style: italic;
+}
+
+.teacher > .full-name {
+    font-family: Pacifico;
+}
+
+@media only screen and (min-width: 1200px) {
+    .teacher {
+        width: 24%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+
+    .teacher {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .teacher {
+        width: 100%;
+    }
+}
