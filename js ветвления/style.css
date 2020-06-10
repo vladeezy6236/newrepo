@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.form {
+    width: 60%;
+    margin: 16px auto;
+    padding: 16px;
+    border: 1px solid rgb(29, 27, 160);
+    background-color: rgb(35, 32, 44);
+}
+.form > p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(158, 185, 235);
+}
+.form > span {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 32%;
+    color: rgb(158, 185, 235);
+}
+
+.form > input,
+.form > button {
+    display: block;
+    padding: 8px;
+    border: 1px solid rgb(29, 27, 160);
+    font-size: 1.5em;
+}
+
+.form > input,
+.form > span {
+    margin-bottom: 16px;
+}
+
+.form > input {
+    width: 100%;
+}
+
+
+.form > button {
+    cursor: pointer;
+    width: 36%;
+    margin: auto;
+    padding: 16 px;
+    font-size: 1.5em;;
+    font-weight: bold;
+    color: rgb(17, 23, 56);
+}

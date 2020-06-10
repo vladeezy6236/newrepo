@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+< html  lang = " en ">
+< голова>
+    < meta  charset = "UTF-8" >
+    < ссылка  rel = "таблица стилей" href = " стиль.css" >
+    < title> > JS.Условия / задача < / title>
+< / head>
+< тело>
+    < div  class = "форма" >
+        <p>Задание 1</p>
+        <span>Введите два числа</span>
+        
+        <  тип ввода = "число" id = "n11" >
+        <  тип ввода = "число" id = "n12" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult1()">Сравнение чисел</button>
+           <hr>
+           <span id="result_value_1">Наибольшее число</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 2</p>
+        <span>Введите три числа</span>
+        <  тип ввода = "число" id = "n21" >
+        <  тип ввода = "число" id = "n22" >
+        <  тип ввода = "число" id = "n23" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult2()">Сравнение чисел</button>
+           <hr>
+           <span id="result_value_2">Наибольшее число</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 3</p>
+        <span>Введите два числа:</span>
+        <hr>
+        < span> > X и Y< / span>
+        <  тип ввода = "число" id = "n31" >
+        <  тип ввода = "число" id = "n32" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult3()">Какая четверть</button>
+           <hr>
+           <span id="result_value_3">Четверть:</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 4</p>
+        <span>Введите два числа</span>
+        <  тип ввода = "число" id = "n41" >
+        <  тип ввода = "число" id = "n42" >
+        < div  class = "button" > > < / div>
+           < кнопка  onclick = "calculateResult4 ()" > > Замена</ Button>
+           <hr>
+           < span  id = "result_value_4. 1" > > K< / span>
+           <hr>
+           < span  id = "result_value_4. 2" > > L< / span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 5</p>
+        <span>Введите одно число</span>
+        
+        <  тип ввода = "число" id = "n51" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult5()">Определение параметров</button>
+           <hr>
+           <span id="result_value_5">Параметры</span>
+        < / div>
+    < / div> 
+    < div  class = "форма" >
+        <p>Задание 6</p>
+        <span>Введите одно число</span>
+        
+        <  тип ввода = "число" id = "n6" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult6()">Определение параметров</button>
+           <hr>
+           <span id="result_value_6">Параметры</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 7</p>
+        <span>Введите одно число</span>
+        
+        <  тип ввода = "число" id = "n7" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult7()">Определение параметров</button>
+           <hr>
+           <span id="result_value_7">Параметры</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 8</p>
+        <span>Введите одно число</span>
+        
+        <  тип ввода = "число" id = "n8" >
+        <div class="button"></div>
+           <button onclick="calculateResult8()">Определение параметров</button>
+           <hr>
+           <span id="result_value_8">Параметры</span>
+        </div>
+    </div>
+    <div class="form">
+        <p>Задание 9</p>
+        <span>Введите текущее время</span>
+        
+        <  тип ввода = "число" id = " n91 " заполнитель = "Часы" >
+        <input type="number" id="n92"placeholder="Минуты">
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult9()">Вывести приветствие</button>
+           <hr>
+           <span id="result_value_9">Приветствие</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 10</p>
+        <span>Введите одно число</span>
+        
+        <  тип ввода = "число" id = "n10" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult10()">Определение параметров</button>
+           <hr>
+           <span id="result_value_10">Параметры</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 11</p>
+        <span>Введите размеры сторон</span>
+        
+        <input type="number" id="n11_1" placeholder="Сторона X">
+        <input type="number" id="n11_2"placeholder="Сторона Y">
+        <input type="number" id="n11_3"placeholder="Сторона Z">
+        <input type="number" id="n11_4"placeholder="Сторона квадратного отверстия A">
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult11()">Вывести ответ</button>
+           <hr>
+           <span id="result_value_11">Ответ</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 12</p>
+        <span>Введите два числа:</span>
+        <hr>
+        < span> > X и Y< / span>
+        <  тип ввода = "число" id = "n12_1" заполнитель = "Число X" >
+        < input  type = "number" id = "n12_2" placeholder = "Число y" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult12()">Вывести результат</button>
+           <hr>
+           <span id="result_value_12">Результат</span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 13</p>
+        <span>Введите два числа:</span>
+        <input type="number" id="n13_1" placeholder="Число А">
+        <input type="number" id="n13_2" placeholder="Число В">
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult13()">Вывести результат</button>
+           <hr>
+           < span  id = "result_value_13. 1" > > A< / span>
+           <hr>
+           < span  id = "result_value_13. 2" > > B< / span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 14</p>
+        <span>Введите два числа:</span>
+        <hr>
+        < span> > X и Y< / span>
+        <  тип ввода = "число" id = "n14_1" заполнитель = "Число X" >
+        < input  type = "number" id = "n14_2" placeholder = "Число y" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult14()">Вывести результат</button>
+           <hr>
+           < span  id = "result_value_14" > > Z < / span>
+        < / div>
+    < / div>
+    < div  class = "форма" >
+        <p>Задание 15</p>
+        <span>Введите два целых числа:</span>
+        <hr>
+        < span> > X и Y< / span>
+        <  тип ввода = "число" id = "n15_1" заполнитель = "Число X" >
+        < input  type = "number" id = "n15_2" placeholder = "Число y" >
+        < div  class = "button" > > < / div>
+           <button onclick="calculateResult15()">Вывести результат</button>
+           <hr>
+           <span id="result_value_15.1"> Цифра младшего разряда: </span>
+           <hr>
+           <span id="result_value_15.2"> Остаток от деления на 3: </span>
+        < / div>
+    < / div>
+    < скрипт  src = " main.js " > > < / script>
+< / body>
+< / html>
