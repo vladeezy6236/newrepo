@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS.JSON</title>
+</head>
+<body>
+    <div class="Privat">
+        <p>Задание 1:</p>
+        <div id="out1"></div>
+        <button id = "btn1">bitcoin</button>
+    </div>
+    <div class="Alfabank">
+        <p>Задание 2:</p>
+        <div id="out2"></div>
+        <button id = "btn2">RUB/EUR</button>
+    </div>
+</body>
+<script>
+    /*Задание 1*/
+   var private = new XMLHttpRequest(); 
+    btn1.addEventListener("click",sndFnc);
+    
+    /*Функция отпрваки запроса*/
+    function sndFnc(){ 
+        private.open("GET", "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
+        private.onreadystatechange = reqReadyStateChangeUpd_1;        
+        private.send();
+    }
+    
+    /*Функция обаботки ответа*/
+    function reqReadyStateChangeUpd_1() {
+    if (private.readyState == 4) {    
+        var status = private.status;
+        if (status == 200) { 
+            obj = JSON.parse(private.responseText);
+            let res = document.createElement("div");
+            res.innerHTML = obj[3].ccy+" / "+obj[3].base_ccy+" buy:"+obj[3].buy+" sale:"+obj[3].sale;
+            console.log(obj);
+            out1.append(res);
+            }   }   }
+     /*Задание 2*/
+     var alfabank= new XMLHttpRequest(); 
+    btn2.addEventListener("click",sndFnc2);
+    
+    /*Функция отпрваки запроса*/
+    function sndFnc2(){ 
+        alfabank.open("GET", "https://developerhub.alfabank.by:8273/partner/1.0.0/public/rates");
+        alfabank.onreadystatechange = reqReadyStateChangeUpd_2;        
+        alfabank.send();
+    }
+    
+    /*Функция обаботки ответа*/
+    function reqReadyStateChangeUpd_2() {
+    if (alfabank.readyState == 4) {    
+        var status2 = alfabank.status;
+        if (status2 == 200) { 
+            obj2 = JSON.parse(alfabank.responseText);
+            let alfa = document.createElement("div");
+            alfa.innerHTML = obj2.rates[0].buyIso + "/" + obj2.rates[0].sellIso + " " + "buy:" + obj2.rates[0].buyRate+ " /sale:" + obj2.rates[0].sellRate + " дата и время: " +obj2.rates[0].date;
+            console.log(obj2);
+            out2.append(alfa);
+            }   
+        }   
+    }
+
+</script>
+</html>
