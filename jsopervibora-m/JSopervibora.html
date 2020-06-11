@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jsopervibora.js" defer></script>
+    <link rel="stylesheet" href="jsoper.css">
+    <title>JS. Оператор выбора</title>
+</head>
+<body>
+    <div class="form">
+        <span>Задание 1</span>
+        <input type="number" id="n11">
+        <input type="number" id="n12">
+        <div class="button">
+            <button onclick="result1()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result11"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 2</span>
+        <input type="number" id="n21">
+        <input type="number" id="n22">
+        <input type="number" id="n23">
+        <div class="button">
+            <button onclick="result2()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result21"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 3</span>
+        <span>Введите Х</span>
+        <input type="number" id="n31">
+        <span>Введите У</span>
+        <input type="number" id="n32">
+        <div class="button">
+            <button onclick="result3()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result31"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 4</span>
+        <span>Введите K</span>
+        <input type="number" id="n41">
+        <span>Введите L</span>
+        <input type="number" id="n42">
+        <div class="button">
+            <button onclick="result4()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result41">K</span>
+        <hr>
+        <span id="result42">L</span>
+    </div>
+
+    <div class="form">
+        <span>Задание 5</span>
+        <span>Введите число</span>
+        <input type="number" id="n51">
+        <div class="button">
+            <button onclick="result5()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result51"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 6</span>
+        <span>Введите число</span>
+        <input type="number" id="n61">
+        <div class="button">
+            <button onclick="result6()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result61"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 7</span>
+        <span>Введите число</span>
+        <input type="number" id="n71">
+        <div class="button">
+            <button onclick="result7()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result71"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 8</span>
+        <span>Введите число</span>
+        <input type="number" id="n81">
+        <div class="button">
+            <button onclick="result8()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result81"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 9</span>
+        <span>Введите часы</span>
+        <input type="number" id="n91">
+        <span>Введите минуты</span>
+        <input type="number" id="n92">
+        <div class="button">
+            <button onclick="result9()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result91"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 10</span>
+        <span>Введите число</span>
+        <input type="number" id="n101">
+        <div class="button">
+            <button onclick="result10()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result101"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 11</span>
+        <span>Введите числа</span>
+        <input type="number" id="n111">
+        <input type="number" id="n112">
+        <input type="number" id="n113">
+        <input type="number" id="n114">
+        <div class="button">
+            <button onclick="result11()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result111"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 12</span>
+        <span>Введите числа</span>
+        <input type="number" id="n121">
+        <input type="number" id="n122">
+        <div class="button">
+            <button onclick="result12()">Ответ</button>
+         </div>
+        <hr>
+        <span id="result121"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 13</span>
+        <span>Введите числа</span>
+        <input type="number" id="n131">
+        <input type="number" id="n132">
+        <div class="button">
+            <button onclick="result13()">Ответ</button>
+         </div>
+        <hr>
+        <span>Результат:</span>
+        <span id="result131"></span>
+        <span id="result132"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 14</span>
+        <span>Введите числа</span>
+        <input type="number" id="n141">
+        <input type="number" id="n142">
+        <div class="button">
+            <button onclick="result14()">Ответ</button>
+         </div>
+        <hr>
+        <span>Z:</span>
+        <span id="result141"></span>
+    </div>
+
+    <div class="form">
+        <span>Задание 15</span>
+        <span>Введите числа</span>
+        <input type="number" id="n151">
+        <input type="number" id="n152">
+        <div class="button">
+            <button onclick="result15()">Ответ</button>
+         </div>
+        <hr>
+        <span>Цифра младшего разряда:</span>
+        <span id="result151"></span>
+        <span>Остаток от деления на 3:</span>
+        <span id="result152"></span>
+    </div>
+</body>
+</html>
