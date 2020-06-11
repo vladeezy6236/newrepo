@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS.OOP</title>
+</head>
+<body>
+    <div class="user"><h2>Забуга Сергій Іванович</h2></div>
+    <div class="block">
+        <div class="img" id="img">
+            <img src="http://www.cyber.kharkov.ua/contentimages/photos/Zabuga.jpg" width="220" height="300">
+        </div>
+        <div class="text">
+            <div class="block" id="a"><b>Посада: </b></div>
+            <div class="block" id="b"><b>Вчене звання, науковий ступінь: </b></div>
+            <div class="block" id="c"><b>Викладає дисципліни: </b></div>
+            <div class="block" id="d"><b>Освіта: </b></div>
+            <div class="block" id="e"><b>Персональні профілі: </b></div>
+            <div class="block" id="f"><b>E-mail: </b></div>
+        </div>
+    </div>
+    <script>
+        class prepod{
+            a = "Доцент";
+            b = "Доцент, кандидат економічних наук";
+            c = "1. Вища математика 2. Оптимізаційні методи та моделі 3. Дослідження операцій 4. Теорія ймовірностей та математична статистика";
+            d = "Харківський державний університет, 1974, прикладна математика";
+            e = "ORCID, Research Gate, Google Scholar";
+            f = "sergey.zabuga@karazin.ua";     
+    }
+    let pr = new prepod();
+    a.append(pr.a);
+    b.append(pr.b);
+    c.append(pr.c);
+    d.append(pr.d);
+    e.append(pr.e);
+    f.append(pr.f)
+    </script>
+</body>
+</html>

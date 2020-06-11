@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 90%;
+    font-family: sans-serif;
+    padding: 5%;
+}
+.user{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 50%;
+    padding: 2%;
+}
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+h2{
+    font-family: cursive;
+}
+b{
+    font-family: cursive;
+}
